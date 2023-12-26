@@ -11,9 +11,9 @@ import java.util.Date;
 public class Program {
     public static void main(String[] args) throws SQLException {
 
+        System.out.println("=== TESTE 1 : seller FindById");
         SellerDao sellerDao = DaoFactory.createSellerDao();
-        Seller s1 = sellerDao.findById(3);
-
+        Seller s1 = sellerDao.findById(2);
         System.out.println(s1);
     }
 }
