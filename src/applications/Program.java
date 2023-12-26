@@ -42,5 +42,8 @@ public class Program {
         s.setBaseSalary(2600);
         sellerDao.update(s);
         System.out.println(sellerDao.findById(s.getId()));
+
+        System.out.println("\n=== TESTE 6 : seller delete");
+        sellerDao.deleteById(10);
     }
 }
